@@ -74,8 +74,8 @@
                 position: fixed;
                 inset: 0 0 auto 0;
                 z-index: 100;
-                background: var(--white);
-                border-bottom: 1px solid var(--border-color);
+                background: var(--blue-dark);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
                 height: 72px;
             }
 
@@ -107,10 +107,12 @@
                 font-weight: 800;
                 font-size: 20px;
                 letter-spacing: -0.5px;
+                color: var(--white);
             }
 
             .brand-name span {
-                color: var(--blue-brand);
+                color: #FDFBF7; /* Un tono crema sólido y limpio para el contraste */
+                font-weight: 500;
             }
             .brand-name var {
                 font-style: normal;
@@ -128,11 +130,11 @@
                 gap: 32px;
                 font-size: 15px;
                 font-weight: 600;
-                color: var(--gray-text);
+                color: rgba(255, 255, 255, 0.85);
             }
 
             .nav-links a:hover {
-                color: var(--blue-brand);
+                color: var(--white);
             }
 
             .header-actions {
@@ -198,11 +200,11 @@
                 width: 48px;
                 height: 48px;
                 place-items: center;
-                border: 1px solid var(--border-color);
-                background: var(--bg-light);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background: rgba(255, 255, 255, 0.05);
                 border-radius: var(--radius);
                 cursor: pointer;
-                color: var(--blue-dark);
+                color: var(--white);
                 z-index: 101;
             }
 
@@ -728,13 +730,13 @@
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    background: var(--white);
+                    background: var(--blue-dark);
                     flex-direction: column;
                     padding: 40px 20px;
                     gap: 0;
                     display: none;
                     z-index: 99;
-                    border-top: 1px solid var(--border-color);
+                    border-top: 1px solid rgba(255, 255, 255, 0.08);
                 }
 
                 .nav-links.is-open {
